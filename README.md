@@ -18,5 +18,5 @@
 - در این پروژه از ابزار drone استفاده شده که اطلاعات خیلی خوبی در مستندات آن به آدرس [لینک](https://docs.drone.io) وجود دارد.
 - drone به اشکال مختلف میتواند اجرا شود که ما در این پروژه از حالت docker ای آن استفاده کردیم. برای فهمیدن تفاوت های حالت های مختلف اجرا به اینجا [لینک](https://docs.drone.io/configure/pipeline/overview) مراجعه کنید.
 - اگر هنوز نمیدونید cicd  کلا یعنی چی از اینجا مطالعه کنید: [لینک](https://dzone.com/articles/learn-how-to-setup-a-cicd-pipeline-from-scratch)
-- فایل ارائه من در مشهد لاگ هم از اینجا قابل دانلود هست: [لینک]()
+- فایل ارائه من در مشهد لاگ هم از اینجا قابل دانلود هست: [لینک](https://github.com/amirbagh75/cicd-masshadlug/blob/master/mashhadlug-cicd.pdf)
 </div>

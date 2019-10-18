@@ -18,7 +18,7 @@ steps:
     - php artisan key:generate
     - ./vendor/bin/phpunit
 
-- name: update-registry  
+- name: update registry  
   image: plugins/docker
   settings:
     username: 

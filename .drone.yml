@@ -1,0 +1,38 @@
+kind: pipeline
+name: mashhadlug-cicd-pipeline
+
+steps:
+
+- name: hello mashhadlug cicd project
+  image: alpine
+  commands:
+  - echo "in every step we are on the root dir of cloned project"
+  - ls
+  
+- name: run tests
+  image: php:7.3-fpm-alpine
+  commands:
+    - curl -s https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin/ --filename=composer 
+    - cp .env.example .env
+    - composer install
+    - php artisan key:generate
+    - ./vendor/bin/phpunit
+
+- name: update-registry  
+  image: plugins/docker
+  settings:
+    username: 
+      from_secret: registry_username
+    password:
+      from_secret: registry_password
+    dockerfile: Dockerfile
+    registry: docker.io
+    repo: amirbagh75/mashhadlug-cicd
+    tags:
+    - latest
+    - ${DRONE_COMMIT}
+
+- name: update project
+  image: alpine
+  commands:
+  - echo "container image updated with https://containrrr.github.io/watchtower/introduction every 30 seconds on host."

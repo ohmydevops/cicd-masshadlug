@@ -41,7 +41,7 @@
 
 <code>php artisan key:generate</code>
 
-<code>php artisan serve</code>
+<code>php artisan serve --host 0.0.0.0 --port 9000</code>
 
 <code>curl -s 127.0.0.1:9000/sum/2/2 | jq</code>
 

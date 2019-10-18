@@ -21,4 +21,39 @@
 - اگر هنوز نمیدونید cicd  کلا یعنی چی از اینجا مطالعه کنید: [لینک](https://dzone.com/articles/learn-how-to-setup-a-cicd-pipeline-from-scratch)
 - فایل ارائه من در مشهد لاگ هم از اینجا قابل دانلود هست: [لینک](https://github.com/amirbagh75/cicd-masshadlug/blob/master/mashhadlug-cicd.pdf)
 - آيا این پروژه دارای یک فرایند کامل cicd میباشد؟ خیر! به هیچ وجه. این فقط یک hello world برای cicd میباشد. فرآیند های اصولی و درست cicd نیازمند جزییات و پیش زمینه های بیشتری میباشد. از تست های کامل تا استراتژ های مدیریت مخازن git و استراتژی های deploy و ...
+
+برای دیدن json ها به صورت مرتب در terminal:
+
+<div dir='ltr'>
+
+<code>sudo apt install jq</code>
+
+</div>
+
+برای نصب و اجرای پروژه به صورت معمولی:
+<div dir='ltr'>
+
+<code>git clone https://github.com/amirbagh75/cicd-masshadlug</code>
+
+<code>cd cicd-masshadlug</code>
+
+<code>cp .env.example .env</code>
+
+<code>php artisan key:generate</code>
+
+<code>php artisan serve</code>
+
+<code>curl -s 127.0.0.1:9000/sum/2/2 | jq</code>
+
+</div>
+
+برای نصب و اجرای پروژه از داکر:
+<div dir='ltr'>
+
+<code>docker run -p 9000:8000 -i -t -d --name cicd-project amirbagh75/mashhadlug-cicd</code>
+
+<code>curl -s 127.0.0.1:9000/sum/2/2 | jq</code>
+
+</div>
+
 </div>

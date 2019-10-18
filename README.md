@@ -47,7 +47,14 @@
 
 </div>
 
-برای نصب و اجرای پروژه از داکر:
+برای اجرای تست پروژه (در دایرکتوری root پروژه)
+<div dir='ltr'>
+
+<code>./vendor/bin/phpunit</code>
+
+</div>
+
+برای نصب و اجرای پروژه با داکر:
 <div dir='ltr'>
 
 <code>docker run -p 9000:8000 -i -t -d --name cicd-project amirbagh75/mashhadlug-cicd</code>

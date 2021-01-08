@@ -1,5 +1,3 @@
-<a href="https://drone.sys-admin.ir/amirbagh75/cicd-masshadlug"><img src="https://drone.sys-admin.ir/api/badges/amirbagh75/cicd-masshadlug/status.svg" /></a>
-
 <div dir='auto'>
 <h2> ارائه cicd مشهدلاگ </h1>
 </div>
